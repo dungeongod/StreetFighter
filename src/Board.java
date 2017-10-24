@@ -72,7 +72,8 @@ public class Board extends JPanel implements GameConstants {
 						//player.move();
 					}
 				}
-				if(e.getKeyCode() == KeyEvent.VK_D){
+				if(e.getKeyCode() == KeyEvent.VK_D) {
+					if (enemy == null) return;
 					enemy.setSpeed(10);
 					enemy.move();
 				}
@@ -81,6 +82,7 @@ public class Board extends JPanel implements GameConstants {
 
 				}
 				if(e.getKeyCode() == KeyEvent.VK_S){
+					if (enemy == null) return;
 					enemy.setCrouch();
 				}
 
