@@ -1,7 +1,7 @@
-package test;
+package test.java;
 
-import main.java.GameConstants;
-import main.java.Sprite;
+import streetfighter.GameConstants;
+import streetfighter.Sprite;
 
 import java.awt.Graphics;
 import java.awt.Image;

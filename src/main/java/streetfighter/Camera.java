@@ -1,9 +1,8 @@
-package main.java;
-
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
+package streetfighter;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Camera implements GameConstants {
     int x;
@@ -22,7 +21,7 @@ public class Camera implements GameConstants {
             System.out.println("Game Would n't Work Someone Delete the BackGround...");
             System.out.println("Thanks for Using");
             System.exit(0);
-            //bi = ImageIO.read(main.java.Camera.class.getResource("bg2.jpg"));
+            //bi = ImageIO.read(streetfighter.Camera.class.getResource("bg2.jpg"));
             //JOptionPane.showMessageDialog(frame,"Game Would n't Work Someone Delete the BackGround...");
         }
     }

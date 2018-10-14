@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 public interface EnemyState {
     int MOVE = 1;

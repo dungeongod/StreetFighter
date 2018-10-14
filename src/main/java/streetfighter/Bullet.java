@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -19,7 +19,7 @@ public class Bullet extends Sprite implements GameConstants {
         } catch (IOException e) {
             // TODO Auto-generated catch block
 
-            System.out.println("Error in main.java.Bullet");
+            System.out.println("Error in streetfighter.Bullet");
         }
     }
     public void outOfScreen(){

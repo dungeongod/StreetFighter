@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -51,7 +51,7 @@ public class Player extends Sprite implements GameConstants,PlayerState {
         h = 180;
         y = FLOOR - (h-10);
 
-       // img = new ImageIcon(main.java.Player.class.getResource(PLAYER_IMG)).getImage();
+       // img = new ImageIcon(streetfighter.Player.class.getResource(PLAYER_IMG)).getImage();
     }
 
 

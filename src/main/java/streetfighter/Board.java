@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 import javax.swing.*;
 import java.awt.*;
@@ -99,7 +99,7 @@ public class Board extends JPanel implements GameConstants {
 		}
 	}
 
-	/*public boolean isCollision(main.java.Player player, main.java.Enemy enemy) {
+	/*public boolean isCollision(streetfighter.Player player, streetfighter.Enemy enemy) {
 		int xDistance = Math.abs(player.getX() - enemy.getX());
 		int yDistance = Math.abs(player.getY() - enemy.getY());
 		return xDistance <= (player.getW() - 30) && yDistance <= (player.getH() - 20);

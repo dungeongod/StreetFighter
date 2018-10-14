@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 public interface GameConstants {
     int GAME_WIDTH = 800;

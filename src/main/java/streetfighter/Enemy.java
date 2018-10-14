@@ -1,11 +1,10 @@
-package main.java;
+package streetfighter;
 
-import java.awt.Graphics;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.imageio.ImageIO;
 
 public class Enemy extends Sprite implements GameConstants,EnemyState {
     ArrayList<Bullet> enemyBulletList = new ArrayList<>();
@@ -18,21 +17,21 @@ public class Enemy extends Sprite implements GameConstants,EnemyState {
     int currentState ;
 
     public void drawEnemy(Graphics g) {
-        if(currentState==EnemyState.MOVE){
+        if(currentState== MOVE){
         drawStandingMoves(g);
     }
         else
-        if(currentState == EnemyState.FIRE_ATTACK){
+        if(currentState == FIRE_ATTACK){
             drawFireAttack(g);
         }
         else
-        if(currentState == EnemyState.CROUCH){
+        if(currentState == CROUCH){
            drawCrouchMoves(g);
         }
     }
 
     public Enemy(){
-        currentState = EnemyState.MOVE;
+        currentState = MOVE;
         el.loadImage();
         moves  = el.standingMoves();
         fireAttack = el.fireAttack();
@@ -43,7 +42,7 @@ public class Enemy extends Sprite implements GameConstants,EnemyState {
         h = 150;
         y = FLOOR - (h-10);
 
-        // img = new ImageIcon(main.java.Player.class.getResource(PLAYER_IMG)).getImage();
+        // img = new ImageIcon(streetfighter.Player.class.getResource(PLAYER_IMG)).getImage();
     }
 
 
@@ -72,7 +71,7 @@ public class Enemy extends Sprite implements GameConstants,EnemyState {
     int moveCount;
     public void drawStandingMoves(Graphics g){
         BufferedImage i = null;
-        currentState = EnemyState.MOVE;
+        currentState = MOVE;
         fireCount = 0;
         //crouchCount = 0;
         try {
@@ -88,7 +87,7 @@ public class Enemy extends Sprite implements GameConstants,EnemyState {
         }
     }
     public void setCrouch(){
-        currentState = EnemyState.CROUCH;
+        currentState = CROUCH;
         moveCount = 0;
         crouchCount = 0;
         fireCount = 0;
@@ -114,7 +113,7 @@ public class Enemy extends Sprite implements GameConstants,EnemyState {
     }
 
    /* public void fire(){
-        main.java.EnemyBullet bullet = new main.java.EnemyBullet(x + w/2, y + h /2);
+        streetfighter.EnemyBullet bullet = new streetfighter.EnemyBullet(x + w/2, y + h /2);
         enemyBulletList.add(bullet);
     }
 */

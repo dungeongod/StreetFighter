@@ -1,9 +1,8 @@
-package main.java;
+package streetfighter;
 
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-    import java.io.IOException;
-
-    import javax.imageio.ImageIO;
+import java.io.IOException;
 
     public class PlayerLoader {
         BufferedImage img;
@@ -11,7 +10,7 @@ import java.awt.image.BufferedImage;
         public void loadImage(){
             try {
                 img = ImageIO.read(PlayerLoader.class.getResource("Ryu..png"));
-               // pi = ImageIO.read(main.java.PlayerLoader.class.getResource("ryunew.png"));
+               // pi = ImageIO.read(streetfighter.PlayerLoader.class.getResource("ryunew.png"));
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 System.out.println("ERROR IN PLAYER");

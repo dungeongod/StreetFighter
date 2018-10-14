@@ -1,4 +1,4 @@
-package main.java;
+package streetfighter;
 
 import javax.swing.JFrame;
 
